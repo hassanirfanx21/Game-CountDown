@@ -1,0 +1,139 @@
+/*   font-family: "Cursed Timer ULiL", sans-serif;
+ */
+
+/*   */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(90, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.container {
+  width: 450px;
+  height: 85vh;
+  border-radius: 25px;
+  backdrop-filter: blur(5px) brightness(0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.6);
+  border: solid 5px rgba(32, 32, 32, 0.265);
+}
+@media (max-width: 470px) {
+  .container {
+    width: 380px;
+  }
+}
+#newGame {
+  margin: 20px auto 0 auto;
+  background-color: rgba(41, 39, 41, 0.747);
+  padding: 6px 20px;
+  border-radius: 7px;
+  border: solid rgba(47, 46, 47, 0.192) 2.5px;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  border: #808080 solid 2px;
+  transform: background-color 1.3s ease;
+}
+#newGame:hover,
+.incrementButtons:hover {
+  background-color: rgb(16, 12, 12);
+}
+#opponents {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 30px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.boxLevel {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.BOX {
+  width: 96.9px;
+  height: 96px;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  background-color: rgba(0, 0, 0, 0.838);
+  border-radius: 21px;
+  color: rgb(255, 0, 0);
+  font-size: 57.7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 12px;
+}
+#score-increments,
+#foul-increment {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0 5px 0;
+}
+.incrementButtons {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(0 0 0 / 13%);
+  border: #808080 solid 2px;
+  color: #808080;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 3px;
+  transform: background-color 1.3s ease;
+}
+#fouls,
+#count {
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+}
+#counter {
+  margin-bottom: 40px;
+  position: relative;
+}
+#counterBox {
+  padding: 8px;
+  width: auto;
+  height: auto;
+}
+#count {
+  margin-bottom: 10px;
+}
+#time {
+  color: red;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 27px;
+  right: -64px;
+  background-color: black;
+  padding: 5px;
+  border-radius: 15px;
+  border: solid black 2px;
+  font-family: "Cursed Timer ULiL", sans-serif;
+}
+.cursorType {
+  cursor: pointer;
+}

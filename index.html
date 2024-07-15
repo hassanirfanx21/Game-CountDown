@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasketBall Counter</title>
+    <!-- <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet"> -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon"
+        href="https://img.freepik.com/free-vector/hand-drawn-flat-design-basketball-logo_23-2149392459.jpg"
+        type="image/x-icon">
+
+</head>
+
+<body>
+    <section class="container">
+        <button id="newGame">New Game</button>
+        <div id="opponents" class="font"><span>Home</span><span>Guest</span></div>
+        <div id="scoreBox" class="boxLevel ">
+            <div class="BOX displayBox" id="HomeScoreBox">0</div>
+            <div class="BOX displayBox" id="GuestScoreBox">0</div>
+        </div>
+        <div id="score-increments">
+            <div id="score-left" class="button-container">
+                <button class="incrementButtons button cursorType" id="Homeone">+1</button>
+                <button class="incrementButtons button cursorType" id="Hometwo">+2</button>
+                <button class="incrementButtons button cursorType" id="Homethree">+3</button>
+            </div>
+            <div id="score-right" class="button-container">
+                <button class="incrementButtons button cursorType" id="guestone">+1</button>
+                <button class="incrementButtons button cursorType" id="guesttwo">+2</button>
+                <button class="incrementButtons button cursorType" id="guestthree">+3</button>
+            </div>
+        </div>
+        <p id="fouls" class="font">Fouls</p>
+        <div id="foulBox" class="boxLevel ">
+            <div class="BOX displayBox" id="HomeFoulBox">0</div>
+            <div class="BOX displayBox" id="GuestFoulBox">0</div>
+        </div>
+        <div id="foul-increment">
+            <div id="foul-left">
+                <button class="incrementButtons cursorType" id="foulhome">+1</button>
+            </div>
+            <div id="foul-right">
+                <button class="incrementButtons cursorType" id="foulguest">+1</button>
+            </div>
+        </div>
+        <p id="count" class="font">Counter</p>
+        <div id="counter">
+            <div class="BOX" id="counterBox">0:0</div>
+            <span id="time">sec</span>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
